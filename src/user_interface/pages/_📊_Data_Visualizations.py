@@ -2,13 +2,17 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import os
 
 st.set_page_config(page_title="Data Visualizations", page_icon="📊", layout="wide")
 st.title("📊 Data Visualizations")
 
 st.write("Explore the crop dataset visually using the charts below.")
 
-df = pd.read_csv("../../../data/crop_recommendation.csv")
+# Get the path to the data file
+base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+data_path = os.path.join(base_dir, 'data', 'crop_recommendation.csv')
+df = pd.read_csv(data_path)
 
 # Crop Distribution
 if st.checkbox("Show Crop Distribution"):
