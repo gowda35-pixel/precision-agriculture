@@ -8,7 +8,7 @@ st.title("📊 Data Visualizations")
 
 st.write("Explore the crop dataset visually using the charts below.")
 
-df = pd.read_csv("../data/crop_recommendation.csv")
+df = pd.read_csv("../../data/crop_recommendation.csv")
 
 # Crop Distribution
 if st.checkbox("Show Crop Distribution"):

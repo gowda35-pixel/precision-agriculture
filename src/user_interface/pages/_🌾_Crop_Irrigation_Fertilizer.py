@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from src.data_collection.simulate_sensors import simulate_sensor_data
-from src.machine_learning.crop_prediction import train_crop_model, predict_crop
-from src.machine_learning.irrigation_prediction import train_irrigation_model, predict_irrigation
-from src.machine_learning.fertilizer_prediction import train_fertilizer_model, predict_fertilizer
+from ...data_collection.simulate_sensors import simulate_sensor_data
+from ...machine_learning.crop_prediction import train_crop_model, predict_crop
+from ...machine_learning.irrigation_prediction import train_irrigation_model, predict_irrigation
+from ...machine_learning.fertilizer_prediction import train_fertilizer_model, predict_fertilizer
 
 st.set_page_config(page_title="Crop, Irrigation & Fertilizer", page_icon="🌾", layout="wide")
 

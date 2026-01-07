@@ -9,10 +9,10 @@ st.title("🌿 Plant Disease Detection")
 
 st.error("TensorFlow is not compatible with Python 3.12. Plant disease detection is currently unavailable.")
 
-# MODEL_PATH = "../models/plant_disease_model.h5"
+# MODEL_PATH = "../../models/plant_disease_model.h5"
 # if os.path.exists(MODEL_PATH):
 #     disease_model = load_model(MODEL_PATH)
-#     class_names = sorted(os.listdir("../data/PlantVillage/train")) if os.path.exists("../data/PlantVillage/train") else []
+#     class_names = sorted(os.listdir("../../data/PlantVillage/train")) if os.path.exists("../../data/PlantVillage/train") else []
 # else:
 #     disease_model = None
 #     class_names = []
