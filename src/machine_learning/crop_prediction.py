@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
-def train_crop_model(path="../data/crop_recommendation.csv"):
+def train_crop_model(path="../../data/crop_recommendation.csv"):
     df = pd.read_csv(path)
     X = df.drop("label", axis=1)
     y = df["label"]
