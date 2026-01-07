@@ -1,9 +1,11 @@
 import pandas as pd
+import os
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
-def train_irrigation_model(path="../../data/irrigation.csv"):
+def train_irrigation_model():
+    path = os.path.join(os.path.dirname(__file__), "../../data/irrigation.csv")
     df = pd.read_csv(path)
     X = df.drop("irrigation", axis=1)
     y = df["irrigation"]
